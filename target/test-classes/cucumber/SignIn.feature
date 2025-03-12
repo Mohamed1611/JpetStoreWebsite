@@ -10,6 +10,6 @@ Given I landded on Jpetstore Website
     Then I land on the dashboard screen
 
     Examples: 
-      | name            | password    | 
-      | mohamed1123     |   mohaa     |  
+      | name            | password  | 
+      | mohamed1123     | mohaa     |  
          

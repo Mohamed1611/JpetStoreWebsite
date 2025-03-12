@@ -28,7 +28,7 @@ public class RegisterationTest extends BaseTest {
 		registerationPage.typeRepeatedPassword(password);
 		registerationPage.typeFirstName(Generator.genRandomString(REG.FIRST_NAME.toString()));
 		registerationPage.typeLastName(Generator.genRandomString(REG.LAST_NAME.toString()));
-		registerationPage.typeEmail(Generator.genRandomMail("mail"));
+		registerationPage.typeEmail(Generator.genRandomMail());
 		registerationPage.typePhone("123456");
 		registerationPage.typeaddress1(Generator.genRandomString(REG.ADDRESS_ONE.toString()));
 		registerationPage.typeaddress2(Generator.genRandomString(REG.ADDRESS_TWO.toString()));

@@ -27,13 +27,13 @@ public class SignInUsingNewRegisteredDataTest extends BaseTest {
 		registerationPage.typeRepeatedPassword(password);
 		registerationPage.typeFirstName(Generator.genRandomString(REG.FIRST_NAME.toString()));
 		registerationPage.typeLastName(Generator.genRandomString(REG.LAST_NAME.toString()));
-		registerationPage.typeEmail(Generator.genRandomMail("mail"));
-		registerationPage.typePhone("12345");
+		registerationPage.typeEmail(Generator.genRandomMail());
+		registerationPage.typePhone(Generator.genRandomNumber(7));
 		registerationPage.typeaddress1(Generator.genRandomString(REG.ADDRESS_ONE.toString()));
 		registerationPage.typeaddress2(Generator.genRandomString(REG.ADDRESS_TWO.toString()));
 		registerationPage.typeCityField(Generator.genRandomString(REG.CITY.toString()));
 		registerationPage.typeStateField(Generator.genRandomString(REG.STATE.toString()));
-		registerationPage.typeZipField("123456");
+		registerationPage.typeZipField(Generator.genRandomNumber(4));
 		registerationPage.typeCountry(Generator.genRandomString(REG.COUNTRY.toString()));
 		registerationPage.selectLanguage("english");
 		registerationPage.selectCategory("BIRDS");

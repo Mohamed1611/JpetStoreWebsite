@@ -12,24 +12,12 @@ import io.cucumber.java.en.When;
 import jpetStore.TestComponents.BaseTest;
 import jpetStore.data.Generator;
 import jpetStore.enums.REG;
-import jpetStore.pageobjects.AngelFishPage;
-import jpetStore.pageobjects.DashBoardPage;
-import jpetStore.pageobjects.FishPage;
-import jpetStore.pageobjects.RegisterationPage;
-import jpetStore.pageobjects.SignInPage;
 
 public class StepDefinitionImpl extends BaseTest {
 	public String password= Generator.genRandomPassword();
 
 	
-	public SignInPage signInPage;
-	 public DashBoardPage dashBoardPage;
-	 public  FishPage fishPage;
-	 public  AngelFishPage angelFishPage;
-	 public RegisterationPage registerationPage;
-	
 
-    
 	@Given("I landded on Jpetstore Website")
 	public void I_landded_on_Jpetstore_Website() throws IOException 
 	{
@@ -53,9 +41,7 @@ public class StepDefinitionImpl extends BaseTest {
 	@When("^I login with username (.+) and password (.+)$")
 	public void I_login_with_username_and_password(String username, String password) throws InterruptedException
 	{
-		//System.out.println("username = "+ username);
-		//System.out.println("password = "+ password);
-		Thread.sleep(3000);
+		
 		signInPage.loginApplication(username,password);;
 		
 	}
@@ -65,6 +51,7 @@ public class StepDefinitionImpl extends BaseTest {
 	public void I_land_on_the_dashboard_screen()
 	{
 		dashBoardPage.verifyLogin();
+		
 	}
 
 		
@@ -100,92 +87,92 @@ public class StepDefinitionImpl extends BaseTest {
 		signInPage.clickRegisterBtn();
 	}
 	
-	@When ("enter userid")
+	@And ("enter userid")
 	public void enter_userid() throws InterruptedException
 	{
 		registerationPage.typeUserID(Generator.genRandomString(REG.USER_ID.toString()));
 	}
-	@When ("enter password")
+	@And ("enter password")
 	public void enter_password() throws InterruptedException
 	{
 		registerationPage.typePassword(password);
 	}
-	 @When ("enter repeat password")
+	 @And ("enter repeat password")
 	 public void enter_repeat_password() throws InterruptedException
 	 {
 		 registerationPage.typeRepeatedPassword(password);
 	 }
-	 @When ("enter first name")
+	 @And ("enter first name")
 	 public void enter_first_name() throws InterruptedException
 	 {
 		 registerationPage.typeFirstName(Generator.genRandomString(REG.FIRST_NAME.toString()));
 	 }
-	 @When ("enter last name")
+	 @And ("enter last name")
 	 public void enter_last_name()
 	 {
 		 registerationPage.typeLastName(Generator.genRandomString(REG.LAST_NAME.toString()));
 	 }
-	 @When ("enter email ")
+	 @And ("enter email")
 	 public void enter_email()
 	 {
-		 registerationPage.typeEmail(Generator.genRandomMail("mail"));
+		 registerationPage.typeEmail(Generator.genRandomMail());
 	 }
-	 @When ("enter phone")
+	 @And ("enter phone")
 	 public void enter_phone()
 	 {
-		 registerationPage.typePhone("123456");
+		 registerationPage.typePhone(Generator.genRandomNumber(7));
 	 }
-	 @When ("enter address1")
+	 @And ("enter address1")
 	 public void enter_address1()
 	 {
 		 registerationPage.typeaddress1(Generator.genRandomString(REG.ADDRESS_ONE.toString()));
 	 }
-	 @When ("enter address2")
+	 @And ("enter address2")
 	 public void enter_address2()
 	 {
 		 registerationPage.typeaddress2(Generator.genRandomString(REG.ADDRESS_TWO.toString()));
 	 }
-	 @When ("enter city")
+	 @And ("enter city")
 	 public void enter_city()
 	 {
 		 registerationPage.typeCityField(Generator.genRandomString(REG.CITY.toString()));
 	 }
-	@When ("enter state")
+	@And ("enter state")
 	public void enter_state()
 	{
 		registerationPage.typeStateField(Generator.genRandomString(REG.STATE.toString()));
 	}
-	@When ("enter zip")
+	@And ("enter zip")
 	public void enter_zip()
 	{
-		registerationPage.typeZipField("0000");
+		registerationPage.typeZipField(Generator.genRandomNumber(4));
 	}
-	@When ("enter country")
+	@And ("enter country")
 	public void enter_country()
 	{
 		registerationPage.typeCountry(Generator.genRandomString(REG.COUNTRY.toString()));
 	}
-	@When ("select language")
+	@And ("select language")
 	public void select_language()
 	{
 		registerationPage.selectLanguage("english");
 	}
-	@When ("select category")
+	@And ("select category")
 	public void select_category()
 	{
 		registerationPage.selectCategory("BIRDS");
 	}
-	@When ("enable mylist")
+	@And ("enable mylist")
 	public void enable_mylist()
 	{
 		registerationPage.checkMyListCheckBox();
 	}
-	@When ("enable mybanner")
+	@And ("enable mybanner")
 	public void enable_mybanner()
 	{
 		registerationPage.checkMyBannerCheckBox();
 	}
-	 @And ("click save account information btn")
+	 @When ("click save account information btn")
 	 public void click_save_account_information_btn()
 	 {
 		 registerationPage.clickSaveAccountInformationBtn();
@@ -194,6 +181,7 @@ public class StepDefinitionImpl extends BaseTest {
 	 public void user_registered_successfully()
 	 {
 		 dashBoardPage.verifyFishOption();
+		 driver.close();
 	 }
 	 
 }
