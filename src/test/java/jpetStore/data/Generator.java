@@ -32,7 +32,7 @@ public class Generator{
         return salt.toString();
     }
 
-    public static String genRandomMail(String mail){
+    public static String genRandomMail(){
         String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         StringBuilder salt = new StringBuilder();
         Random rnd = new Random();
@@ -45,9 +45,8 @@ public class Generator{
     }
 
 
-    public static int genRandomNumber(int length){
-        int output;
-        String number;
+    public static String genRandomNumber(int length){
+        
         String SALTCHARS = "1234567890";
         StringBuilder salt = new StringBuilder();
         Random rnd = new Random();
@@ -55,8 +54,8 @@ public class Generator{
             int index = (int) (rnd.nextFloat() * SALTCHARS.length());
             salt.append(SALTCHARS.charAt(index));
         }
-        number = salt.toString();
-        output = Integer.parseInt(number);
-        return output;
+//        number = salt.toString();
+//        output = Integer.parseInt(number);
+        return salt.toString();
     }
 }

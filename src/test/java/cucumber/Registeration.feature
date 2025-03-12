@@ -4,28 +4,28 @@ Feature: Registeration For Jpetstore Website
 Background:
 Given I landded on Jpetstore Website
   @tag1
-  Scenario Outline: Positive test of registeration
+  Scenario: Positive test of registeration
     Given I click on signin button
-    Given I click on register btn
-    When enter userid
-    When enter password
-    When enter repeat password
-    When enter first name
-    When enter last name
-    When enter email 
-    When enter phone
-    When enter address1
-    When enter address2
-    When enter city
-    When enter state
-    When enter zip
-    When enter country
-    When select language
-    When select category
-    When select language
-    When enable mylist
-    When enable mybanner
-    And click save account information btn
+    And I click on register btn
+    And enter userid
+    And enter password
+    And enter repeat password
+    And enter first name
+    And enter last name
+    And enter email
+    And enter phone
+    And enter address1
+    And enter address2
+    And enter city
+    And enter state
+    And enter zip
+    And enter country
+    And select language
+    And select category
+    And select language
+    And enable mylist
+    And enable mybanner
+    When click save account information btn
     Then user registered successfully 
 
     #Examples: 

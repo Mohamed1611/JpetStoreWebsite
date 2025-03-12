@@ -14,6 +14,6 @@ Given I landded on Jpetstore Website
     Then I land on the shopping cart page with the selected product
 
     Examples: 
-      | name            | password    | 
-      | mohamed1123     |   mohaa     |  
+      | name            | password  | 
+      | mohamed150      | 1234      |  
          
