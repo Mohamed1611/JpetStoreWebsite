@@ -26,8 +26,7 @@ public class AddToCartTest extends BaseTest {
 		AngelFishPage angelFishPage = new AngelFishPage(driver);
 
 		landingPage.goTo();
-		//launchApplication();
-		//Thread.sleep(2000);
+		
 
 		landingPage.clickSignIn();
 
@@ -52,9 +51,7 @@ public class AddToCartTest extends BaseTest {
 
 	@DataProvider
 	public Object[][] getData() throws IOException {
-		// HashMap<String,String> map = new HashMap<String,String>();
-		// map.put("username", "0009080");
-		// map.put("password", "1234");
+		
 
 		List<HashMap<String, String>> data = getJsonDataToMap(
 				System.getProperty("user.dir") + "//src//test//java//jpetStore//data//LoginData.json");
