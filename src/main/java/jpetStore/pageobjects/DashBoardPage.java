@@ -1,6 +1,5 @@
 package jpetStore.pageobjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,6 +29,10 @@ public class DashBoardPage {
 	public void selectFishOption()
 	{
 		fishSelection.click();
+	}
+	public void verifyFishOption()
+	{
+		fishSelection.isDisplayed();
 	}
 	
 	public void verifyLogin()

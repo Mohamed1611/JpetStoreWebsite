@@ -8,9 +8,9 @@ import org.openqa.selenium.support.PageFactory;
 public class LandingPage {
 	WebDriver driver;
 
-	// constructor
+	
 	public LandingPage(WebDriver driver) {
-		// init the driver
+		
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 

@@ -25,10 +25,10 @@ import jpetStore.pageobjects.LandingPage;
 
 public class BaseTest {
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 	public LandingPage landingPage;
 
-	public WebDriver initializeDriver() throws IOException {
+	public static WebDriver initializeDriver() throws IOException {
 
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+
@@ -54,7 +54,8 @@ public class BaseTest {
 			driver = new EdgeDriver();
 		}
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+		
 		driver.manage().window().maximize();
 		return driver;
 	}

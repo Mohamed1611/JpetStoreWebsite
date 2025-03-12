@@ -7,13 +7,13 @@ import org.openqa.selenium.support.PageFactory;
 
 public class SignInPage {
 	
-	WebDriver driver;
+	 WebDriver driver;
 
-	// constructor
+	
 	public SignInPage(WebDriver driver) {
-		// init the driver
+		
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver,this);
 
 	}
 	
@@ -37,6 +37,7 @@ public class SignInPage {
 		passwordField.clear();
 		passwordField.sendKeys(password);
 		loginBtn.click();
+		
 		
 	}
 	
