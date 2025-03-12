@@ -16,7 +16,7 @@ public class RegisterationPage {
 	}
 
 	@FindBy(css = "input[name='username']")
-	static
+
 	WebElement userIDField;
 
 	@FindBy(css = "input[name='password']")
@@ -66,35 +66,35 @@ public class RegisterationPage {
 
 	@FindBy(css = "input[name='account.bannerOption']")
 	WebElement enableMyBannerCheckBox;
-	
+
 	@FindBy(css = "input[name='newAccount']")
 	WebElement saveAccountInformationBtn;
-	
-	
-	
+
 	/**
 	 * @description type userID
 	 * @param userID
-	 * @return 
+	 * @return
 	 */
-	public static String typeUserID(String userid) throws InterruptedException {
+	public String typeUserID(String userid) throws InterruptedException {
 		userIDField.sendKeys(userid);
+
 		return userid;
-		
+
 	}
+
 	/**
 	 * @description type password
 	 * @param password
 	 */
 	public void typePassword(String password) throws InterruptedException {
 		newPasswordField.sendKeys(password);
-		
+
 	}
 
-public void typeRepeatedPassword(String password) throws InterruptedException {
-	newPasswordField.sendKeys(password);
-	
-}
+	public void typeRepeatedPassword(String password) throws InterruptedException {
+		newPasswordField.sendKeys(password);
+
+	}
 
 	/**
 	 * @description type first name
@@ -102,170 +102,127 @@ public void typeRepeatedPassword(String password) throws InterruptedException {
 	 */
 	public void typeFirstName(String firstName) throws InterruptedException {
 		firstNameField.sendKeys(firstName);
-		
-	}
 
+	}
 
 	/**
 	 * @description type last name
 	 * @param lastName
 	 */
-	public void typeLastName(String lastname){
+	public void typeLastName(String lastname) {
 		lastNameField.sendKeys(lastname);
 	}
+
 	/**
 	 * @description type email
 	 * @param email
 	 */
-	public void typeEmail(String email){
+	public void typeEmail(String email) {
 		emailField.sendKeys(email);
 	}
-	
+
 	/**
 	 * @description type phone
 	 * @param phone
 	 */
-	
-	public void typePhone(String num){
+
+	public void typePhone(String num) {
 		phoneField.sendKeys(num);
 	}
-	
+
 	/**
 	 * @description type address1
 	 * @param address1
 	 */
-	public void typeaddress1(String address1){
+	public void typeaddress1(String address1) {
 		address1Field.sendKeys(address1);
 	}
-	
+
 	/**
 	 * @description type address2
 	 * @param address2
 	 */
-	public void typeaddress2(String address2){
+	public void typeaddress2(String address2) {
 		address2Field.sendKeys(address2);
 	}
-	
+
 	/**
 	 * @description type city
 	 * @param cityfield
 	 */
-public void typeCityField(String cityfield){
-	cityField.sendKeys(cityfield);
-}
+	public void typeCityField(String cityfield) {
+		cityField.sendKeys(cityfield);
+	}
 
-/**
- * @description type state field
- * @param statefield
- */
-public void typeStateField(String statefield){
-	stateField.sendKeys(statefield);
-}
+	/**
+	 * @description type state field
+	 * @param statefield
+	 */
+	public void typeStateField(String statefield) {
+		stateField.sendKeys(statefield);
+	}
 
-/**
- * @description type zip field
- * @param string
- */
-public void typeZipField(String string){
-	zipField.sendKeys(string);
-}
+	/**
+	 * @description type zip field
+	 * @param string
+	 */
+	public void typeZipField(String zipnum) {
+		zipField.sendKeys(zipnum);
+	}
 
-/**
- * @description type country
- * @param countryfield
- */
-public void typeCountryField(String countryfield){
-	countryField.sendKeys(countryfield);
-}
+	/**
+	 * @description type country
+	 * @param countryfield
+	 */
+	public void typeCountry(String countryfield) {
+		countryField.sendKeys(countryfield);
+	}
 
-/**
- * @description type language
- * @param lang
- */
-public void selectLanguage(String lang){
-	Select langDropDownList = new Select(languageDropDownList);
-	langDropDownList.selectByValue(lang);
-	
-}
-
-/**
- * @description type category
- * @param category
- */
-public void selectCategory(String category){
-	Select favouritCategoryList = new Select(favouritCategoryDropDownList);
-	favouritCategoryList.selectByValue(category);
-	
-}
-
-/**
- * @description click check my list
- * @param mylistcheckbox
- */
-public void checkMyListCheckBox(){
-	enableMyListCheckBox.click();
-	
-}
-/**
- * @description click check my banner
- * @param mybannercheckbox
- */
-public void checkMyBannerCheckBox(){
-	enableMyBannerCheckBox.click();
-	
-}
-
-/**
- * @description click save button
- * @param savebutton
- */
-public void clickSaveAccountInformationBtn(){
-	saveAccountInformationBtn.click();
-	
-}
-
-
-
-
-
-
-	/*public void registerationMethod(String username, String password, String firstname, String lastname, String email,
-			String phone, String address1, String address2, String city, String state, String zip, String contry,String lang,String category) 
-	{
-		userIDField.sendKeys(username);
-		newPasswordField.sendKeys(password);
-		repeatedPasswordField.sendKeys(password);
-		firstNameField.sendKeys(firstname);
-		lastNameField.sendKeys(lastname);
-		emailField.sendKeys(email);
-		phoneField.sendKeys(phone);
-		address1Field.sendKeys(address1);
-		address2Field.sendKeys(address2);
-		cityField.sendKeys(city);
-		stateField.sendKeys(state);
-		zipField.sendKeys(zip);
-		countryField.sendKeys(contry);
-		
+	/**
+	 * @description type language
+	 * @param lang
+	 */
+	public void selectLanguage(String lang) {
 		Select langDropDownList = new Select(languageDropDownList);
 		langDropDownList.selectByValue(lang);
-		
+
+	}
+
+	/**
+	 * @description type category
+	 * @param category
+	 */
+	public void selectCategory(String category) {
 		Select favouritCategoryList = new Select(favouritCategoryDropDownList);
 		favouritCategoryList.selectByValue(category);
-		
-		enableMyListCheckBox.click();
-		enableMyBannerCheckBox.click();
-		saveAccountInformationBtn.click();
-		
-		
-		
-		
-		
-		
-		
-		
 
-		
-		
-	}*/
+	}
+
+	/**
+	 * @description click check my list
+	 * @param mylistcheckbox
+	 */
+	public void checkMyListCheckBox() {
+		enableMyListCheckBox.click();
+
+	}
+
+	/**
+	 * @description click check my banner
+	 * @param mybannercheckbox
+	 */
+	public void checkMyBannerCheckBox() {
+		enableMyBannerCheckBox.click();
+
+	}
+
+	/**
+	 * @description click save button
+	 * @param savebutton
+	 */
+	public void clickSaveAccountInformationBtn() {
+		saveAccountInformationBtn.click();
+
+	}
 
 }

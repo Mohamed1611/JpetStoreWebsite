@@ -11,7 +11,8 @@ import jpetStore.pageobjects.RegisterationPage;
 import jpetStore.pageobjects.SignInPage;
 
 public class SignInUsingNewRegisteredDataTest extends BaseTest {
-String newUser;
+	String newUser;
+
 	@Test
 	public void signInUsingRegisterationData() throws IOException, InterruptedException {
 		String password;
@@ -20,7 +21,8 @@ String newUser;
 		password = Generator.genRandomPassword();
 		landingPage.clickSignIn();
 		signInPage.clickRegisterBtn();
-		newUser = RegisterationPage.typeUserID(Generator.genRandomString(REG.USER_ID.toString()));
+		newUser = registerationPage.typeUserID(Generator.genRandomString(REG.USER_ID.toString()));
+
 		registerationPage.typePassword(password);
 		registerationPage.typeRepeatedPassword(password);
 		registerationPage.typeFirstName(Generator.genRandomString(REG.FIRST_NAME.toString()));
@@ -32,16 +34,18 @@ String newUser;
 		registerationPage.typeCityField(Generator.genRandomString(REG.CITY.toString()));
 		registerationPage.typeStateField(Generator.genRandomString(REG.STATE.toString()));
 		registerationPage.typeZipField("123456");
-		registerationPage.typeCountryField(Generator.genRandomString(REG.COUNTRY.toString()));
+		registerationPage.typeCountry(Generator.genRandomString(REG.COUNTRY.toString()));
 		registerationPage.selectLanguage("english");
 		registerationPage.selectCategory("BIRDS");
 		registerationPage.checkMyListCheckBox();
 		registerationPage.checkMyBannerCheckBox();
-		
+		registerationPage.clickSaveAccountInformationBtn();
+
 		landingPage.clickSignIn();
 		signInPage.loginApplication(newUser, password);
-		//String welcomeMsg = driver.findElement(By.xpath("//div[@id='WelcomeContent']")).getText();
-		//Assert.assertTrue(welcomeMsg.equalsIgnoreCase("Welcome mohameds!"));
+		// String welcomeMsg =
+		// driver.findElement(By.xpath("//div[@id='WelcomeContent']")).getText();
+		// Assert.assertTrue(welcomeMsg.equalsIgnoreCase("Welcome mohameds!"));
 
 	}
 

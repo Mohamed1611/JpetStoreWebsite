@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
                     </span>
                     <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="cucumber.TestNGTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Positive test of registeration&quot;, &quot;Registeration For Jpetstore Website&quot;)">runScenario("Positive test of registeration", "Registeration For Jpetstore Website")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="cucumber.TestNGTestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Positive test of Add To Cart&quot;, &quot;Add to Cart for JpetStore Website&quot;)">runScenario("Positive test of Add To Cart", "Add to Cart for JpetStore Website")</a> <!-- method navigator-link -->
@@ -131,13 +136,28 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="runScenario(&quot;Positive test of registeration&quot;, &quot;Registeration For Jpetstore Website&quot;)">
+                  </a> <!-- runScenario("Positive test of registeration", "Registeration For Jpetstore Website") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Positive test of registeration","Registeration For Jpetstore Website")</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;jpetStore.pageobjects.SignInPage.clickRegisterBtn()&quot; because &quot;this.signInPage&quot; is null
+	at jpetStore.stepDefinitions.StepDefinitionImpl.I_click_on_register_btn(StepDefinitionImpl.java:100)
+	at ✽.I click on register btn(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/Registeration.feature:9)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="runScenario(&quot;Positive test of Add To Cart&quot;, &quot;Add to Cart for JpetStore Website&quot;)">
                   </a> <!-- runScenario("Positive test of Add To Cart", "Add to Cart for JpetStore Website") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Positive test of Add To Cart","Add to Cart for JpetStore Website")</span>
                   <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;jpetStore.pageobjects.SignInPage.loginApplication(String, String)&quot; because &quot;this.signInPage&quot; is null
-	at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:48)
-	at ✽.I login with username mohamed1123 and password mohaa(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/AddToCart.feature:10)
+	at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:59)
+	at ✽.I login with username mohamed1123 and password mohaa(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/AddToCart.feature:9)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -151,7 +171,7 @@
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Positive test of Signin","Signin from Jpetstore")</span>
                   <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;jpetStore.pageobjects.SignInPage.loginApplication(String, String)&quot; because &quot;this.signInPage&quot; is null
-	at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:48)
+	at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:59)
 	at ✽.I login with username mohamed1123 and password mohaa(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/SignIn.feature:9)
 
 </div> <!-- stack-trace -->
@@ -164,7 +184,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/1y/0yyzq9jd51q6rqyff9f8r3yw0000gn/T/testng-eclipse-1108371030/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/1y/0yyzq9jd51q6rqyff9f8r3yw0000gn/T/testng-eclipse--499964510/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -221,20 +241,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'cucumber.TestNGTestRunner')
-data.setCell(0, 3, 4461);
+data.setCell(0, 3, 5842);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'cucumber.TestNGTestRunner')
-data.setCell(1, 3, 2410);
+data.setCell(1, 3, 5304);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'cucumber.TestNGTestRunner')
+data.setCell(2, 3, 2376);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -262,24 +286,30 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">cucumber.TestNGTestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@5b84f14)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@216914)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Positive test of Add To Cart", "Add to Cart for JpetStore Website")</span>
-                <span class="method-start">252 ms</span>
+                <span class="method-start">248 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Positive test of registeration", "Registeration For Jpetstore Website")</span>
+                <span class="method-start">6098 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Positive test of Signin", "Signin from Jpetstore")</span>
-                <span class="method-start">4718 ms</span>
+                <span class="method-start">8476 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">7134 ms</span>
+                <span class="method-start">13795 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

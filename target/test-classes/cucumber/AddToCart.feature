@@ -1,10 +1,9 @@
 
-@tag
 Feature: Add to Cart for JpetStore Website
   
 Background:
 Given I landded on Jpetstore Website
-  @tag1
+  
   Scenario Outline: Positive test of Add To Cart
    Given I click on signin button
     When I login with username <name> and password <password>

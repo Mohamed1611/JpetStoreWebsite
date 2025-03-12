@@ -23,7 +23,7 @@ public class RegisterationTest extends BaseTest {
 		landingPage.goTo();
 		landingPage.clickSignIn();
 		signInPage.clickRegisterBtn();
-		RegisterationPage.typeUserID(Generator.genRandomString(REG.USER_ID.toString()));
+		registerationPage.typeUserID(Generator.genRandomString(REG.USER_ID.toString()));
 		registerationPage.typePassword(password);
 		registerationPage.typeRepeatedPassword(password);
 		registerationPage.typeFirstName(Generator.genRandomString(REG.FIRST_NAME.toString()));
@@ -35,12 +35,12 @@ public class RegisterationTest extends BaseTest {
 		registerationPage.typeCityField(Generator.genRandomString(REG.CITY.toString()));
 		registerationPage.typeStateField(Generator.genRandomString(REG.STATE.toString()));
 		registerationPage.typeZipField("12345");
-		registerationPage.typeCountryField(Generator.genRandomString(REG.COUNTRY.toString()));
+		registerationPage.typeCountry(Generator.genRandomString(REG.COUNTRY.toString()));
 		registerationPage.selectLanguage("english");
 		registerationPage.selectCategory("BIRDS");
 		registerationPage.checkMyListCheckBox();
 		registerationPage.checkMyBannerCheckBox();
-		
+		registerationPage.clickSaveAccountInformationBtn();
 		
 		//Assert.assertEquals(driver.getCurrentUrl(), "https://petstore.octoperf.com/actions/Catalog.action");
 

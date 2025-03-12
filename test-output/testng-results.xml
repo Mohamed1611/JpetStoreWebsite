@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-12T15:54:02 GST" name="Default suite" finished-at="2025-03-12T15:54:09 GST" duration-ms="7193">
+  <suite started-at="2025-03-13T00:26:37 GST" name="Default suite" finished-at="2025-03-13T00:26:51 GST" duration-ms="13848">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@609cd4d8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@561b6512]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-03-12T15:54:02 GST" name="Default test" finished-at="2025-03-12T15:54:09 GST" duration-ms="7193">
+    <test started-at="2025-03-13T00:26:37 GST" name="Default test" finished-at="2025-03-13T00:26:51 GST" duration-ms="13848">
       <class name="cucumber.TestNGTestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@609cd4d8]" started-at="2025-03-12T15:54:02 GST" name="setUpClass" finished-at="2025-03-12T15:54:02 GST" duration-ms="247" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@561b6512]" started-at="2025-03-13T00:26:37 GST" name="setUpClass" finished-at="2025-03-13T00:26:37 GST" duration-ms="245" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@5b84f14]]>
+                <![CDATA[org.testng.TestRunner@216914]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@609cd4d8]" started-at="2025-03-12T15:54:02 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-12T15:54:06 GST" duration-ms="4461" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@561b6512]" started-at="2025-03-13T00:26:37 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-13T00:26:43 GST" duration-ms="5842" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -40,15 +40,42 @@
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "jpetStore.pageobjects.SignInPage.loginApplication(String, String)" because "this.signInPage" is null
-at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:48)
-at ✽.I login with username mohamed1123 and password mohaa(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/AddToCart.feature:10)
+at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:59)
+at ✽.I login with username mohamed1123 and password mohaa(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/AddToCart.feature:9)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@609cd4d8]" started-at="2025-03-12T15:54:06 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-12T15:54:09 GST" duration-ms="2410" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@561b6512]" started-at="2025-03-13T00:26:43 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-13T00:26:46 GST" duration-ms="2376" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive test of registeration"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registeration For Jpetstore Website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "jpetStore.pageobjects.SignInPage.clickRegisterBtn()" because "this.signInPage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "jpetStore.pageobjects.SignInPage.clickRegisterBtn()" because "this.signInPage" is null
+at jpetStore.stepDefinitions.StepDefinitionImpl.I_click_on_register_btn(StepDefinitionImpl.java:100)
+at ✽.I click on register btn(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/Registeration.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@561b6512]" started-at="2025-03-13T00:26:46 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-13T00:26:51 GST" duration-ms="5304" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -67,7 +94,7 @@ at ✽.I login with username mohamed1123 and password mohaa(file:///Users/mohamm
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "jpetStore.pageobjects.SignInPage.loginApplication(String, String)" because "this.signInPage" is null
-at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:48)
+at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:59)
 at ✽.I login with username mohamed1123 and password mohaa(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/SignIn.feature:9)
 ]]>
             </full-stacktrace>
@@ -75,7 +102,7 @@ at ✽.I login with username mohamed1123 and password mohaa(file:///Users/mohamm
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@609cd4d8]" started-at="2025-03-12T15:54:09 GST" name="tearDownClass" finished-at="2025-03-12T15:54:09 GST" duration-ms="47" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@561b6512]" started-at="2025-03-13T00:26:51 GST" name="tearDownClass" finished-at="2025-03-13T00:26:51 GST" duration-ms="40" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

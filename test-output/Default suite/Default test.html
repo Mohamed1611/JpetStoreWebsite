@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Mar 12 15:54:02 GMT+04:00 2025</td>
+<td>Started on:</td><td>Thu Mar 13 00:26:37 GMT+04:00 2025</td>
 </tr>
-<tr><td>Total time:</td><td>7 seconds (7193 ms)</td>
+<tr><td>Total time:</td><td>13 seconds (13848 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,29 +76,41 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='cucumber.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive test of registeration", "Registeration For Jpetstore Website"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;jpetStore.pageobjects.SignInPage.clickRegisterBtn()&quot; because &quot;this.signInPage&quot; is null
+	at jpetStore.stepDefinitions.StepDefinitionImpl.I_click_on_register_btn(StepDefinitionImpl.java:100)
+	at ✽.I click on register btn(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/Registeration.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1030384622", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1030384622'><pre>java.lang.NullPointerException: Cannot invoke &quot;jpetStore.pageobjects.SignInPage.clickRegisterBtn()&quot; because &quot;this.signInPage&quot; is null
+	at jpetStore.stepDefinitions.StepDefinitionImpl.I_click_on_register_btn(StepDefinitionImpl.java:100)
+	at ✽.I click on register btn(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/Registeration.feature:9)
+</pre></div></td>
+<td>2</td>
+<td>cucumber.TestNGTestRunner@561b6512</td></tr>
+<tr>
 <td title='cucumber.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive test of Add To Cart", "Add to Cart for JpetStore Website"</td>
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;jpetStore.pageobjects.SignInPage.loginApplication(String, String)&quot; because &quot;this.signInPage&quot; is null
-	at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:48)
-	at ✽.I login with username mohamed1123 and password mohaa(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/AddToCart.feature:10)
-</pre></div><a href='#' onClick='toggleBox("stack-trace194402391", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace194402391'><pre>java.lang.NullPointerException: Cannot invoke &quot;jpetStore.pageobjects.SignInPage.loginApplication(String, String)&quot; because &quot;this.signInPage&quot; is null
-	at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:48)
-	at ✽.I login with username mohamed1123 and password mohaa(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/AddToCart.feature:10)
+	at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:59)
+	at ✽.I login with username mohamed1123 and password mohaa(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/AddToCart.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1880102535", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1880102535'><pre>java.lang.NullPointerException: Cannot invoke &quot;jpetStore.pageobjects.SignInPage.loginApplication(String, String)&quot; because &quot;this.signInPage&quot; is null
+	at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:59)
+	at ✽.I login with username mohamed1123 and password mohaa(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/AddToCart.feature:9)
 </pre></div></td>
-<td>4</td>
-<td>cucumber.TestNGTestRunner@609cd4d8</td></tr>
+<td>5</td>
+<td>cucumber.TestNGTestRunner@561b6512</td></tr>
 <tr>
 <td title='cucumber.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive test of Signin", "Signin from Jpetstore"</td>
 <td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;jpetStore.pageobjects.SignInPage.loginApplication(String, String)&quot; because &quot;this.signInPage&quot; is null
-	at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:48)
+	at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:59)
 	at ✽.I login with username mohamed1123 and password mohaa(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/SignIn.feature:9)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1449664175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1449664175'><pre>java.lang.NullPointerException: Cannot invoke &quot;jpetStore.pageobjects.SignInPage.loginApplication(String, String)&quot; because &quot;this.signInPage&quot; is null
-	at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:48)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1310167355", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1310167355'><pre>java.lang.NullPointerException: Cannot invoke &quot;jpetStore.pageobjects.SignInPage.loginApplication(String, String)&quot; because &quot;this.signInPage&quot; is null
+	at jpetStore.stepDefinitions.StepDefinitionImpl.I_login_with_username_and_password(StepDefinitionImpl.java:59)
 	at ✽.I login with username mohamed1123 and password mohaa(file:///Users/mohammedsamir/eclipse-workspace/JpetStoreAutomation/src/test/java/cucumber/SignIn.feature:9)
 </pre></div></td>
-<td>2</td>
-<td>cucumber.TestNGTestRunner@609cd4d8</td></tr>
+<td>5</td>
+<td>cucumber.TestNGTestRunner@561b6512</td></tr>
 </table><p>
 </body>
 </html>

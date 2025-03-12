@@ -4,15 +4,15 @@
   <listeners>
     <listener class-name="jpetStore.TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Registeration(failed)">
+  <test thread-count="5" name="Sign In Using New Registeration Data(failed)">
     <classes>
-      <class name="jpetStore.tests.RegisterationTest">
+      <class name="jpetStore.tests.SignInUsingNewRegisteredDataTest">
         <methods>
+          <include name="signInUsingRegisterationData"/>
           <include name="launchApplication"/>
-          <include name="registerationTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- jpetStore.tests.RegisterationTest -->
+      </class> <!-- jpetStore.tests.SignInUsingNewRegisteredDataTest -->
     </classes>
-  </test> <!-- Registeration(failed) -->
+  </test> <!-- Sign In Using New Registeration Data(failed) -->
 </suite> <!-- Failed suite [Suite] -->
