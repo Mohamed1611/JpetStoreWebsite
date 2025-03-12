@@ -2,63 +2,78 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-13T02:07:25 GST" name="Suite" finished-at="2025-03-13T02:07:38 GST" duration-ms="13144">
+  <suite started-at="2025-03-13T02:28:33 GST" name="Default suite" finished-at="2025-03-13T02:28:44 GST" duration-ms="11447">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@6da21078]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-03-13T02:07:25 GST" name="Add Order To Cart" finished-at="2025-03-13T02:07:30 GST" duration-ms="4943">
-      <class name="jpetStore.tests.AddToCartTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:jpetStore.tests.AddToCartTest@81d9a72]" started-at="2025-03-13T02:07:25 GST" name="launchApplication" finished-at="2025-03-13T02:07:28 GST" duration-ms="2954" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="addToCart(java.util.HashMap)[pri:0, instance:jpetStore.tests.AddToCartTest@81d9a72]" started-at="2025-03-13T02:07:28 GST" name="addToCart" data-provider="getData" finished-at="2025-03-13T02:07:30 GST" duration-ms="1737" status="PASS">
+    <test started-at="2025-03-13T02:28:33 GST" name="Default test" finished-at="2025-03-13T02:28:44 GST" duration-ms="11447">
+      <class name="cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@6da21078]" started-at="2025-03-13T02:28:33 GST" name="setUpClass" finished-at="2025-03-13T02:28:33 GST" duration-ms="243" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=1234, username=mohamed1122}]]>
+                <![CDATA[org.testng.TestRunner@490c7a83]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addToCart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:jpetStore.tests.AddToCartTest@81d9a72]" started-at="2025-03-13T02:07:30 GST" name="tearDown" finished-at="2025-03-13T02:07:30 GST" duration-ms="145" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@6da21078]" started-at="2025-03-13T02:28:33 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-13T02:28:38 GST" duration-ms="4728" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive test of Add To Cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add to Cart for JpetStore Website"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- jpetStore.tests.AddToCartTest -->
-    </test> <!-- Add Order To Cart -->
-    <test started-at="2025-03-13T02:07:30 GST" name="Registeration" finished-at="2025-03-13T02:07:34 GST" duration-ms="4002">
-      <class name="jpetStore.tests.RegisterationTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:jpetStore.tests.RegisterationTest@52815fa3]" started-at="2025-03-13T02:07:30 GST" name="launchApplication" finished-at="2025-03-13T02:07:33 GST" duration-ms="2375" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@6da21078]" started-at="2025-03-13T02:28:38 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-13T02:28:41 GST" duration-ms="3478" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive test of registeration"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registeration For Jpetstore Website"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="registerationTest()[pri:0, instance:jpetStore.tests.RegisterationTest@52815fa3]" started-at="2025-03-13T02:07:33 GST" name="registerationTest" finished-at="2025-03-13T02:07:34 GST" duration-ms="1542" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@6da21078]" started-at="2025-03-13T02:28:41 GST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-03-13T02:28:44 GST" duration-ms="2962" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive test of Signin"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Signin from Jpetstore"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:jpetStore.tests.RegisterationTest@52815fa3]" started-at="2025-03-13T02:07:34 GST" name="tearDown" finished-at="2025-03-13T02:07:34 GST" duration-ms="80" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@6da21078]" started-at="2025-03-13T02:28:44 GST" name="tearDownClass" finished-at="2025-03-13T02:28:44 GST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- jpetStore.tests.RegisterationTest -->
-    </test> <!-- Registeration -->
-    <test started-at="2025-03-13T02:07:34 GST" name="Sign In Using New Registeration Data" finished-at="2025-03-13T02:07:38 GST" duration-ms="3994">
-      <class name="jpetStore.tests.SignInUsingNewRegisteredDataTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:jpetStore.tests.SignInUsingNewRegisteredDataTest@14a50707]" started-at="2025-03-13T02:07:34 GST" name="launchApplication" finished-at="2025-03-13T02:07:36 GST" duration-ms="1949" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="signInUsingRegisterationData()[pri:0, instance:jpetStore.tests.SignInUsingNewRegisteredDataTest@14a50707]" started-at="2025-03-13T02:07:36 GST" name="signInUsingRegisterationData" finished-at="2025-03-13T02:07:38 GST" duration-ms="1915" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signInUsingRegisterationData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:jpetStore.tests.SignInUsingNewRegisteredDataTest@14a50707]" started-at="2025-03-13T02:07:38 GST" name="tearDown" finished-at="2025-03-13T02:07:38 GST" duration-ms="124" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- jpetStore.tests.SignInUsingNewRegisteredDataTest -->
-    </test> <!-- Sign In Using New Registeration Data -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
