@@ -42,7 +42,6 @@ public class RegisterationTest extends BaseTest {
 		registerationPage.checkMyBannerCheckBox();
 		registerationPage.clickSaveAccountInformationBtn();
 		
-		//Assert.assertEquals(driver.getCurrentUrl(), "https://petstore.octoperf.com/actions/Catalog.action");
 
 
 	}

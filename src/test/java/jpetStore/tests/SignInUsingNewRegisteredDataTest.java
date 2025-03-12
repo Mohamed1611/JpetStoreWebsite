@@ -45,7 +45,7 @@ public class SignInUsingNewRegisteredDataTest extends BaseTest {
 		signInPage.loginApplication(newUser, password);
 		// String welcomeMsg =
 		// driver.findElement(By.xpath("//div[@id='WelcomeContent']")).getText();
-		// Assert.assertTrue(welcomeMsg.equalsIgnoreCase("Welcome mohameds!"));
+		// Assert.assertTrue(welcomeMsg.equalsIgnoreCase("Welcome "+ newUser!"));
 
 	}
 

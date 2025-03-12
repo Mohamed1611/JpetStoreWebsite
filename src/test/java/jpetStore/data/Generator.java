@@ -54,8 +54,7 @@ public class Generator{
             int index = (int) (rnd.nextFloat() * SALTCHARS.length());
             salt.append(SALTCHARS.charAt(index));
         }
-//        number = salt.toString();
-//        output = Integer.parseInt(number);
+
         return salt.toString();
     }
 }
