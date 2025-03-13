@@ -13,6 +13,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  
 
   <dependencies>
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -57,18 +58,7 @@
     <version>7.20.1</version>
 </dependency>
 
-
-
-  	<dependency>
-  		<groupId>mohamed</groupId>
-  		<artifactId>selenium-java</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
-  	<dependency>
-  		<groupId>samble</groupId>
-  		<artifactId>samble</artifactId>
-  		<version>0.0.1-SNAPSHOT</version>
-  	</dependency>
+  	
   	<!-- https://mvnrepository.com/artifact/com.github.mkolisnyk/cucumber-report-generator -->
 <dependency>
     <groupId>com.github.mkolisnyk</groupId>
@@ -88,7 +78,13 @@
 		          <target>1.8</target>
 		           <encoding>UTF-8</encoding>          
 		        </configuration>
-		      </plugin>	  		      		     
+		      </plugin>
+		      <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.5.2</version>
+        </plugin>	  		      		     
       	</plugins>
   	</build>
+  	
 </project>
