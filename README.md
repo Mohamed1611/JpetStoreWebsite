@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+ master
+ HEAD
 # JpetStoreWebsite
-=======
 <h1 align="center" id="title">JpetStore WebSite</h1>
 
 <p id="description">This project is to Automate some positive test cases e2e scenarios with selenium &amp; Java with TestNG and maven and Cucumber BDD</p>
@@ -83,4 +83,7 @@ Technologies used in the project:
 *   DataGenerators
 *   json
 *   TDD
->>>>>>> 941f27b (Create README.md)
+ 941f27b (Create README.md)
+
+
+
