@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+
+<listener class-name="jpetStore.TestComponents.Listeners"/>
+
+</listeners>
+
+ <test thread-count="5" name="Add Order To Cart">
+   <classes>
+    
+    <class name="jpetStore.tests.AddToCartTest"/>
+    
+   </classes>
+ </test>
+  <test thread-count="5" name="Registeration">
+    <classes>
+      <class name="jpetStore.tests.RegisterationTest"/>
+      
+    </classes>
+  </test>
+  <test thread-count="5" name="Sign In Using New Registeration Data">
+    <classes>
+      
+      <class name="jpetStore.tests.SignInUsingNewRegisteredDataTest"/>
+    </classes>
+  </test> 
+</suite>
