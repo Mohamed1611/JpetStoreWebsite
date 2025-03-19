@@ -48,7 +48,9 @@ mvn compile
 <p>5. then you will run the test by:</p>
 
 ```
-mvn test
+mvn test 
+mvn test -Dbrowser=firefox
+mvn test -Dbrowser=edge
 ```
 
 <p>6. Cucumber report</p>
